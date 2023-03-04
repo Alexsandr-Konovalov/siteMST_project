@@ -7,9 +7,11 @@
     <title>ООО МеталлСтройТек | Строительство быстровозводимых зданий из ЛСТК</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="show()">
 
     <section class="wrapper">
+
+<!-- Контейнер header -->
 
         <header class="header">
 
@@ -69,6 +71,7 @@
                     <input type="radio" name="slides" id="point5">
     
                     <div class="slider">
+
                         <div class="slides img1">
                             <div>
                                 <h1>
@@ -83,7 +86,6 @@
                                     При сотрудничестве с нами, заказчики спокойны за качество нашей работы и сроки строительства.
                                 </p>
                             </div>
-
                         </div>
                         <div class="slides img2"></div>
                         <div class="slides img3"></div>
@@ -110,8 +112,9 @@
 
             </div>
 
-
         </header>
+
+<!-- Контейнер main -->
 
         <main class="main">
 
@@ -189,23 +192,162 @@
                     <form class="decoration-contact-form" id="contact-form">
                         <div class="contact-form-contact">
                           <label for="name">ИМЯ*</label>
-                          <input type="text" id="name" name="name" value="ИМЯ*" required>
+                          <input type="text" id="name" name="name" placeholder="ИМЯ*" required>
                         </div>
                         <div class="contact-form-contact">
                           <label for="phone">ТЕЛЕФОН*</label>
-                          <input type="tel" id="phone" name="phone" value="ТЕЛЕФОН*" required>
+                          <input type="tel" id="phone" name="phone" placeholder="ТЕЛЕФОН*" required>
                         </div>
                         <div class="contact-form-contact">
                           <label for="email">E-MAIL*</label>
-                          <input type="email" id="email" name="email" value="E-MAIL*" required>
+                          <input type="email" id="email" name="email" placeholder="E-MAIL*" required>
                         </div>
                         <div class="contact-form-contact">
                           <label for="message"></label>
-                          <textarea id="message" name="message"></textarea>
+                          <textarea class="raz" id="message" name="message" placeholder="СООБЩЕНИЕ"></textarea>
                         </div>
                         <button type="submit">Расчитать стоимость</button>
                     </form>
                       
+                </div>
+                <p>
+                    Стоимость является приблизительной, для получения точной информации обратитесь в офис компании
+                </p>
+            </div>
+
+            <div class="main__tabs">
+                <h2>Реализованные проекты</h2>
+<!-- Контейнер для вкладок -->
+
+	            <div class="tab">
+                    
+<!-- Кнопки вкладок -->
+                    <button class="tablinks active" onclick="openTab(event, 'tab1')" id="defaultOpen">Ангары и склады</button>
+		            <button class="tablinks" onclick="openTab(event, 'tab2')">Торговые здания</button>
+		            <button class="tablinks" onclick="openTab(event, 'tab3')">Жилые здания</button>
+		            <button class="tablinks" onclick="openTab(event, 'tab4')">Сельхоз здания</button>
+		            <button class="tablinks" onclick="openTab(event, 'tab5')">Т2.0</button>
+		
+                </div>
+<!-- Содержимое вкладок -->
+		        <div id="tab1" class="tabcontent" style="display: block;">
+                    <div class="tabcontent-items">
+
+                        <div class="tabcontent-item">
+                            <div class="hover-effect-btn">
+                                <img src="images/tab-bg.png" alt="" />
+                                <h3 class="title">Какой то текст</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="#">Узнать больше</a></div>
+                            </div>
+                        </div>
+
+                        <div class="tabcontent-item">
+                            <div class="hover-effect-btn">
+                                <img src="images/tab-bg1.png" alt="" />
+                                <h3 class="title">Какой то текст</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="#">Узнать больше</a></div>
+                            </div>
+                        </div>
+
+                        <div class="tabcontent-item">
+                            <div class="hover-effect-btn">
+                                <img src="images/tab-bg.png" alt="" />
+                                <h3 class="title">Какой то текст</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="#">Узнать больше</a></div>
+                            </div>
+                        </div>
+
+                        <div class="tabcontent-item">
+                            <div class="hover-effect-btn">
+                                <img src="images/tab-bg1.png" alt="" />
+                                <h3 class="title">Какой то текст</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="#">Узнать больше</a></div>
+                            </div>
+                        </div>
+
+                        <div class="tabcontent-item">
+                            <div class="hover-effect-btn">
+                                <img src="images/tab-bg.png" alt="" />
+                                <h3 class="title">Какой то текст</h3>
+                                <div class="overlay"></div>
+                                <div class="button"><a href="#">Узнать больше</a></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+    
+                <div id="tab2" class="tabcontent">
+                    <h3>Содержимое вкладки 2</h3>
+                    <p>Это содержимое вкладки 2.</p>
+                </div>
+    
+                <div id="tab3" class="tabcontent">
+                    <h3>Содержимое вкладки 3</h3>
+                    <p>Это содержимое вкладки 3.</p>
+                </div>
+    
+                <div id="tab4" class="tabcontent">
+                    <h3>Содержимое вкладки 4</h3>
+                    <p>Это содержимое вкладки 4.</p>
+                </div>
+    
+                <div id="tab5" class="tabcontent">
+                    <h3>Содержимое вкладки 5</h3>
+                    <p>Это содержимое вкладки 5.</p>
+                </div>
+            </div>
+
+            <div class="our-partners">
+                <h2>Наши клиенты</h2>
+
+                <div class="parent">
+
+                    <div id="leftarrow" onclick="moveLeft()">
+                        <button class="slider__btn_prev"></button>
+                    </div>
+
+                    <div class="child" id="c1">
+                        <img src="images/partnerLogos/1.png" alt="">
+                    </div>
+
+                    <div class="child" id="c2">
+                        <img src="images/partnerLogos/2.png" alt="">
+                    </div>
+
+                    <div class="child" id="c3">
+                        <img src="images/partnerLogos/3.png" alt="">
+                    </div>
+
+                    <div class="child" id="c4">
+                        <img src="images/partnerLogos/4.png" alt="">
+                    </div>
+
+                    <div class="child" id="c5">
+                        <img src="images/partnerLogos/5.png" alt="">
+                    </div>
+
+                    <div class="child" id="c6">
+                        <img src="images/partnerLogos/2.png" alt="">
+                    </div>
+
+                    <div class="child" id="c7">
+                        <img src="images/partnerLogos/4.png" alt="">
+                    </div>
+
+                    <div class="child" id="c8">
+                        <img src="images/partnerLogos/1.png" alt="">
+                    </div>
+
+                    <div id="rightarrow" onclick="moveRight()">
+                        <button class="slider__btn_next"></button>
+                    </div>
+
                 </div>
             </div>
 
